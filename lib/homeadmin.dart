@@ -60,13 +60,13 @@ class HomeAdmin extends StatelessWidget {
                 Expanded(
                   child: InkWell(
                     onTap: () {
-                      Navigator.push(context, MaterialPageRoute(builder: (context) => ViewCourse()));
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => const ViewCourse()));
                     },
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
                         Expanded(child: Image.asset('assets/view_course.png')), // Imagen ajustada
-                        Text('Ver Cursos')
+                        const Text('Ver Cursos')
                       ],
                     ),
                   ),
@@ -81,7 +81,7 @@ class HomeAdmin extends StatelessWidget {
                 Expanded(
                   child: InkWell(
                     onTap: () {
-                      Navigator.push(context, MaterialPageRoute(builder: (context) => CreateUsers()));
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => const CreateUsers()));
                     },
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
@@ -95,7 +95,7 @@ class HomeAdmin extends StatelessWidget {
                 Expanded(
                   child: InkWell(
                     onTap: () {
-                      Navigator.push(context, MaterialPageRoute(builder: (context) => ViewUsers()));
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => const ViewUsers()));
                     },
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,

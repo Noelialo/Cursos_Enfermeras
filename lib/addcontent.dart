@@ -6,6 +6,7 @@ class AddContent extends StatefulWidget {
   const AddContent({super.key});
 
   @override
+  // ignore: library_private_types_in_public_api
   _AddContentState createState() => _AddContentState();
 }
 
@@ -46,12 +47,12 @@ class _AddContentState extends State<AddContent> {
                   _pickedFile = null; // Reset the picked file
                 });
               },
-              items: <DropdownMenuItem<FileType>>[
-                const DropdownMenuItem(
+              items: const <DropdownMenuItem<FileType>>[
+                DropdownMenuItem(
                   value: FileType.custom,
                   child: Text('PDF'),
                 ),
-                const DropdownMenuItem(
+                DropdownMenuItem(
                   value: FileType.video,
                   child: Text('Video'),
                 ),

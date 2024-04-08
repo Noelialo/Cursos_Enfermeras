@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'main_drawer.dart'; // Importa el MainDrawer aquí
 
 class ViewCourse extends StatelessWidget {
-  const ViewCourse({Key? key}) : super(key: key);
+  const ViewCourse({super.key});
 
   @override
   Widget build(BuildContext context) {

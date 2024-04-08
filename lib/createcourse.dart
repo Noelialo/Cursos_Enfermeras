@@ -3,9 +3,10 @@ import 'main_drawer.dart'; // Asegúrate de que este archivo existe y está en l
 import 'createmodules.dart';
 
 class CreateCourse extends StatefulWidget {
-  const CreateCourse({Key? key}) : super(key: key);
+  const CreateCourse({super.key});
 
   @override
+  // ignore: library_private_types_in_public_api
   _CreateCourseState createState() => _CreateCourseState();
 }
 
@@ -103,7 +104,7 @@ class _CreateCourseState extends State<CreateCourse> {
               ),
               ElevatedButton(
                 onPressed: () {
-                  Navigator.push(context, MaterialPageRoute(builder: (context) => CreateModules()));
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => const CreateModules()));
                 },
                 child: const Text('Insertar módulo'),
               ),

@@ -23,7 +23,7 @@ class MainDrawer extends StatelessWidget {
             onTap: () {
               Navigator.of(context).pop(); // Cerrar el drawer
               Navigator.of(context).pushAndRemoveUntil(
-                MaterialPageRoute(builder: (context) => HomeAdmin()),
+                MaterialPageRoute(builder: (context) => const HomeAdmin()),
                 (Route<dynamic> route) => false,
               );
             },

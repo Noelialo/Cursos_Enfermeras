@@ -50,7 +50,7 @@ class _RegisterFormState extends State<RegisterForm> {
   void _register() {
     if (_formKey.currentState!.validate()) {
       // Aquí implementarías la lógica de registro
-      print('Formulario válido');
+      ('Formulario válido');
     }
   }
 

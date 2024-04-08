@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'main_drawer.dart'; // Importa MainDrawer
 
 class ViewUsers extends StatelessWidget {
-  const ViewUsers({Key? key}) : super(key: key);
+  const ViewUsers({super.key});
 
   @override
   Widget build(BuildContext context) {
